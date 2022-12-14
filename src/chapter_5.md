@@ -1,1 +1,3 @@
-# Actix-webを使ったwebアプリ開発
+# Actix-webを使ったWeb API
+
+現在広く使われている`Actix Web`を使ってweb APIを作ります

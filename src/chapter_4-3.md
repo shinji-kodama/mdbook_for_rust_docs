@@ -1,18 +1,20 @@
-# Deploy
-## 認証情報を入力
-`./aws/credentials`にIAMユーザーのアクセスキーidとシークレットアクセスキーを入力
+# LambdaにDeploy
+### 認証情報を入力
+`./aws/credentials`にデプロイ権限のあるユーザーのidとシークレットを入力
 
-```
+```toml
 [default]
 aws_access_key_id = **********
 aws_secret_access_key = **********
 ```
 
 必要な権限は以下
+Lambda_FullAccessとかで行けたはずです。
 ```bash
 "iam:CreateRole"
 "iam:AttachRolePolicy"
 "iam:PassRole"
+"iam:UpdateAssumeRolePolicy"
 "lambda:GetFunction"
 "lambda:CreateFunction"
 "lambda:UpdateFunctionCode"
@@ -34,7 +36,9 @@ $ cargo lambda build --release
 
 `--iam-role`オプションがない場合、自動で`AWSLambdaBasicExecutionRole`を作成してデプロイしてくれるとのこと
 
-roleを指定するようエラーが出たら、エラーメッセージ内にある`--iam-role arn:aws:iam::******:role/*********`をコマンドに追加して実行
+roleを指定するようエラーが出たら、エラーメッセージ内にあるArn（`--iam-role arn:aws:iam::******:role/*********`）か、該当ポリシーを持つroleのArnをコマンドに追加して実行
+
+（私のawsアカウントでは`--iam-role arn:aws:iam::205985056391:role/lambdaBasicExec`）
 
 ```bash
 $ cargo lambda deploy -r ap-northeast-1

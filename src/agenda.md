@@ -1,5 +1,9 @@
 # コンテンツ
 
+Rustと今日使うライブラリ群が入っているコンテナがあるリポジトリ
+
+[GitHub](https://github.com/shinji-kodama/rust_practice)
+
 > 言語仕様について[](chapter_1.md)
 
 > 環境構築[](chapter_1.md)

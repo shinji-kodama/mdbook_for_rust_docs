@@ -1,6 +1,6 @@
 # Summary
 
-<!-- - [今回のコンテンツ](./agenda.md) -->
+- [今回のコンテンツ](./agenda.md)
 - [Rustの基礎](./chapter_1.md)
   - [特徴](./chapter_1_1.md)
     - [パフォーマンス](./chapter_1_1_1.md)
@@ -31,7 +31,7 @@
     - [プロジェクトの実行](./chapter_2_2_2.md)
     - [Cargo.tomlについて](./chapter_2_2_3.md)
     - [依存関係の追加](./chapter_2_2_4.md)
-    - [チュートリアル](./chapter_2_2_5.md)
+    - [Ferris say](./chapter_2_2_5.md)
   - [静的解析、テスト](./chapter_2_3.md)
     - [フォーマッタ、静的解析](./chapter_2_3_1.md)
     - [テスト](./chapter_2_3_2.md)
@@ -43,11 +43,25 @@
   - [環境構築](chapter_4-1.md)
   - [関数の作成](chapter_4-2.md)
   - [デプロイ](chapter_4-3.md)
+  - [http関数を作成](chapter_4-4.md)
 - [Actix-webで作るWeb API](chapter_5.md)
-  - [Actix Webでサーバーを作成](chapter_4-1.md)
-  - [Serdeを使用したAPIの実装](chapter_4-1.md)
-  - [DieselでDBを扱うAPIを実装](chapter_4-1.md)
+  - [Actix Webでサーバーを作成](chapter_5-1.md)
+  - [Serdeを使用したAPIの実装](chapter_5-2.md)
+  - [DieselでDBを扱うAPIを実装](chapter_5-3.md)
+    - [Diesel](./chapter_5_3_1.md)
+    - [実装の概要](./chapter_5_3_2.md)
+    - [DB接続](./chapter_5_3_3.md)
+    - [DBとの入出力、記事投稿](./chapter_5_3_4.md)
+    - [途中経過](./chapter_5_3_5.md)
+    - [動かしてみる](./chapter_5_3_6.md)
+    - [記事一覧取得のAPI実装](./chapter_5_3_7.md)
+    - [ミドルウェアの追加](./chapter_5_3_8.md)
+    - [完成形](./chapter_5_3_9.md)
+    
 - [WebAssemblyで作るフロントエンド](chapter_6.md)
+  - [環境構築](chapter_6-1.md)
+  - [Hello world する](chapter_6-2.md)
+  - [アプリケーションを実装](chapter_6-3.md)
 - [Tauriでクロスプラットフォーム開発](chapter_7.md)
     
   
