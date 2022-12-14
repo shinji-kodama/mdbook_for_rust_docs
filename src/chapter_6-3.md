@@ -164,7 +164,7 @@
 `actix-web-blog`フォルダにて
 
 ```bash
-$ cargo make --env-fike .env run
+$ cargo make --env-file .env run
 ```
 
 フロントエンドを別ターミナルで起動
@@ -172,7 +172,7 @@ $ cargo make --env-fike .env run
 今回のバックエンドはcorsの設定をしていないので、trunkのプロキシ機能を通じてアクセス
 
 ```bash
-$ trunk serve --port 8081 \
+$ trunk serve --port 8081 --address 0.0.0.0 \
 --proxy-backend=http://localhost:8080/posts
 ```
 

@@ -47,7 +47,7 @@ fn main() {
 trunkコマンドでビルド + 起動
 
 ```bash
-$ trunk serve --port 8081
+$ trunk serve --port 8081 --address 0.0.0.0
 ```
 
 ### ブラウザで表示
