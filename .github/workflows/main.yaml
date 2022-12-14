@@ -19,5 +19,5 @@ jobs:
       with:
         deploy_key: ${{ secrets.ACTIONS_DEPLOY_KEY }}
         external_repository: shinji-kodama/rust_docs
-        PUBLISH_BRANCH: master
+        PUBLISH_BRANCH: main
         PUBLISH_DIR: ./book
