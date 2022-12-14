@@ -1,0 +1,5 @@
+[book]
+authors = ["shinji"]
+language = "ja"
+multilingual = false
+src = "src"
